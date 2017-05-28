@@ -2,14 +2,14 @@
 title: Hanson
 header-img: "img/facebook.jpg"
 tagline: "cn"  
-description: "Hanson|Think Different"  
+description: "keming|believe"  
 baseurl: ""
-url: "http://zyphs21.github.io"  
+url: "http://zkm670541684.github.io"  
 
 # About/contact
 owner: 
-  name: "张远平"
-  email: yuanpingzhang123@gmail.com
+  name: "曾柯铭"
+  email: zkm670541684@163.com
   bio: ""
 
 # Data
@@ -18,10 +18,10 @@ favicon: img/favicon.png
 
 douban_username:  
 twitter_username: 
-github_username: zyphs21
-weibo_username: 汉森HS
+github_username: zkm670541684
+weibo_username: 
 facebook_username:
-zhihu_username: zhang-yi-sen-46
+zhihu_username: 
 
 # Build settings  
 # use Github Flavored Markdown !important  
@@ -49,11 +49,11 @@ defaults:
 
 # Comments 
 comments :
-  provider : duoshuo
+  provider : 
   duoshuo :
-    short_name : hanson
+    short_name : 
   disqus :
-      short_name : hanson
+      short_name : 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
