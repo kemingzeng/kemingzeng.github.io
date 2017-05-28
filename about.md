@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "my name is Hanson Zhang.On my way to change"
+description: "my name is Keming Zeng.On my way to change"
 header-img: "img/green.jpg"
 ---
 
@@ -10,17 +10,17 @@ header-img: "img/green.jpg"
 
 # 联系方式
 
-*   Email：yuanpingzhang123@gmail.com
-*   QQ/微信号：835749634/张远平
+*   Email：zkm670541684@163.com
+*   QQ/微信号：1097078987/曾柯铭
 
 * * *
 
 # 个人信息
 
-*   张远平/男/1993
-*   本科/广东工业大学 
-*   技术博客: <http://www.myhanson.com>
-*   Github: <https://github.com/zyphs21>
-*   目前就职于：ZTESoft
+*   曾柯铭/男/1994
+*   本科/哈尔滨工业大学（2011-2015）
+*   研究生/电子科技大学 （2017-）
+*   Github: <https://github.com/zkm670541684>
+*   曾就职于：BOE（2015-2016）
 
 * * *
