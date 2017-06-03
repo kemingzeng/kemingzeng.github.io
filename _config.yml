@@ -49,8 +49,8 @@ defaults:
 
 # Comments 
 comments :
+  intensedebate_comments: true 
   provider : 
-intensedebate_comments: true 
   disqus :
       short_name : 
 
