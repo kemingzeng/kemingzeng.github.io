@@ -48,7 +48,7 @@ defaults:
       header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments
-comments : 
+comments : intensedebate
   provider : 
   disqus :
       short_name : 
