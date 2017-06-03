@@ -50,8 +50,7 @@ defaults:
 # Comments 
 comments :
   provider : 
-  duoshuo :
-    short_name : 
+intensedebate_comments: true 
   disqus :
       short_name : 
 
