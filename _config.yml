@@ -47,9 +47,9 @@ defaults:
       author: "keming"
       header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
 
-# Comments 
-comments :
-  intensedebate_comments: true 
+# Comments
+intensedebate_comments: true 
+comments : 
   provider : 
   disqus :
       short_name : 
