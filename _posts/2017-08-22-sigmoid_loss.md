@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi-labels Classification
+title: Sigmoid Loss
 date: 2017-08-22
 categories: blog
 tags: [ML]
