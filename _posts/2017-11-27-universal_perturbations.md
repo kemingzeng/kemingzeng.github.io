@@ -13,23 +13,19 @@ description: 现在常用的卷积
 [``Universal adversarial perturbations``](https://arxiv.org/abs/1610.08401) 
 
 ### 直接上效果
-1. 看个示意图
-
+1. 看个示意图  
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_1.png )
 左边是正确分类，右边是错误分类。看不出来吧～～
 
-2. 扰动长什么样
-
+2. 扰动长什么样  
 针对不同网络模型在imagenet那个数据集训练的扰动长这样：
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_2.png )
 
-3. 扰动之后长什么样
-
+3. 扰动之后长什么样  
 仔细看还是可以看见波纹的。
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_3.png )
 
-4. 数据说明问题
-
+4. 数据说明问题  
 表中的所有数据都是`错误率`！  
 首先这些扰动是可以共用的，虽然效果没有专用的好：
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_4.png )
@@ -42,7 +38,8 @@ description: 现在常用的卷积
 所以针对同一种网络模型，算出来的扰动向量可以有很多种。
 
 ### 针对这些扰动的fine-tuning有用吗
-* 几乎没有。事实上，不考虑迭代次数，这样做也只能把错误搞到80%左右。（`还是很高`）
+* 几乎没有。
+* 事实上，不考虑迭代次数，这样做也只能把错误搞到80%左右。（`还是很高`）
 
 ### 全局扰动比随机的扰动要好
 * 至于为什么，我也看不懂。
