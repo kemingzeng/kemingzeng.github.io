@@ -25,7 +25,7 @@ description: 现在常用的卷积
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_3.png )
 
 4. 数据说明问题
-表中的所有数据都是`错误率`！
+表中的所有数据都是`错误率`！  
 首先这些扰动是可以共用的，虽然效果没有专用的好：
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_4.png )
 专用大概是这样：
