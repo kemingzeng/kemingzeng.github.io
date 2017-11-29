@@ -12,7 +12,7 @@ description:
 * 因此我决定信一波资本家
 
 ### pdf版
-* 放在百度网盘里了，大家可以来看看，密码bend
+* 放在百度网盘里了，大家可以来看看，密码bend  
 [高盛行业报告中文版pdf](https://pan.baidu.com/s/1qYwqw9m) 
 
 ### 简单展示下
