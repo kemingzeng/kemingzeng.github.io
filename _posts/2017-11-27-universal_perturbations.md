@@ -4,7 +4,7 @@ title: Universal perturbations
 date: 2017-11-27
 categories: blog
 tags: [ML]
-description: 现在常用的卷积
+description: 关于全局扰动
 ---
 
 ### 扰动
