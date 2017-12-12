@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adjusted R-square
+title: Batch Generatioin
 date: 2017-12-12
 categories: blog
 tags: [ML]
@@ -24,7 +24,7 @@ description: 关于keras中fit generator用于多个数据文件。
 * 如此这般。
 * fit generator那里的steps也要改。
 
-···
+```
 from keras.preprocessing.image import ImageDataGenerator
 import random
 import numpy as np
@@ -61,6 +61,6 @@ if __name__ == '__main__':
     g = train_gen()     # 这一步必须写在外面，很重要！
     for i in range(10):
         print(next(g))
-···
+```
 
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/bg_1.PNG)
