@@ -80,6 +80,8 @@ def train_batchgen(self, batchsize=32, epochs=5):
                 for i in range(train_y.shape[0] // batchsize):
                     yield gens.next()
                 del train_x
+                del gens
+                gc.collect()
     test_x = np.load(npypath + 'inputs' + str(piece_num-1) + '.npy')
     test_y = np.load(npypath + 'labels' + str(piece_num-1) + '.npy')
     
