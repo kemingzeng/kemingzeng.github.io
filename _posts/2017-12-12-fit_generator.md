@@ -7,7 +7,7 @@ tags: [ML]
 description: 关于keras中fit generator用于多个数据文件。
 ---
 
-### fit generator
+### Fit Generator
 * 这个东西是keras里面很好用的一个训练器
 * 知道它之前，对于小数据，我只会用fit；数据量大一点，内存装不下了，只好分块存在硬盘上，训练时读取存好的npy文件，再分批次使用fit on batch。这么搞的话，每次都要自己手动分batch，比较麻烦，而且训练时要反复读取数据，增加了计算量。
 * fit generator是个好东西，传给它一个x，y的generator就ok。
@@ -65,3 +65,30 @@ if __name__ == '__main__':
 
 * 看不见代码框的可以看下图。。
 ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/bg_1.PNG)
+
+* 最后给出一个实际用的代码
+
+```
+def train_batchgen(self, batchsize=32, epochs=5):
+    def batch_gen():
+        gen = keras.preprocessing.image.ImageDataGenerator()
+        while 1:
+            for piece in range(piece_num - 1):
+                train_x = np.load(npypath + 'inputs' + str(piece) + '.npy')
+                train_y = np.load(npypath + 'labels' + str(piece) + '.npy')
+                gens = gen.flow(train_x, train_y, batch_size=batchsize)
+                for i in range(train_y.shape[0] // batchsize):
+                    yield gens.next()
+                del train_x
+    test_x = np.load(npypath + 'inputs' + str(piece_num-1) + '.npy')
+    test_y = np.load(npypath + 'labels' + str(piece_num-1) + '.npy')
+    
+    # callbacks
+    log = keras.callbacks.CSVLogger('./save/log.csv')
+    tb = keras.callbacks.TensorBoard(log_dir='./save/tensorboard-logs', batch_size=batchsize)
+    lr_decay = keras.callbacks.LearningRateScheduler(schedule=lambda epoch : 0.001*(0.9**epoch))
+    hist = keras.callbacks.History()
+
+    h = self.model.fit_generator(generator=batch_gen(), steps_per_epoch=self.train_samples//batchsize, epochs=epochs, validation_data=[test_x, test_y], callbacks=[log, tb, lr_decay, hist])
+    print(h.history)
+```
