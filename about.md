@@ -20,7 +20,7 @@ header-img: "img/green.jpg"
 *   曾柯铭/男/1994
 *   本科/哈尔滨工业大学（2011-2015）
 *   研究生/电子科技大学 （2017-）
-*   Github: <https://github.com/zkm670541684>
+*   Github: <https://github.com/kemingzeng>
 *   曾就职于：BOE（2015-2016）
 
 * * *
