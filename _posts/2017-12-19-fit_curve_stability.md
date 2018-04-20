@@ -13,7 +13,7 @@ description: 关于深度学习中fit的准确率曲线不稳定问题。
 
 ### 最近训练遇到的
 * 图就是这样
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/fcs_1.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/fcs_1.png )
 
 ### 理解
 * 首先要明确的是，train acc的下降并不能说明模型出现了什么问题。这只是训练方法的问题。

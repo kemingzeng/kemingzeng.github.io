@@ -14,27 +14,27 @@ description: 关于全局扰动
 
 ### 直接上效果
 1. 看个示意图  
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_1.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_1.png )
 左边是正确分类，右边是错误分类。看不出来吧～～
 
 2. 扰动长什么样  
 针对不同网络模型在imagenet那个数据集训练的扰动长这样：
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_2.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_2.png )
 
 3. 扰动之后长什么样  
 仔细看还是可以看见波纹的。
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_3.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_3.png )
 
 4. 数据说明问题  
 表中的所有数据都是`错误率`！  
 首先这些扰动是可以共用的，虽然效果没有专用的好：
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_4.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_4.png )
 专用大概是这样：
- ![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_5.png )
+ ![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_5.png )
 
 ### 关于算法
 * 大概就是这样：
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/uap_6.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/uap_6.png )
 所以针对同一种网络模型，算出来的扰动向量可以有很多种。
 
 ### 针对这些扰动的fine-tuning有用吗

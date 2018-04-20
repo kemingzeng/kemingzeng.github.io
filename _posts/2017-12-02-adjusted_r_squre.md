@@ -8,7 +8,7 @@ description: 评估回归质量，并且可用于特征筛选。
 ---
 
 ### 一点统计学的小知识
-![](https://raw.githubusercontent.com/zkm670541684/zkm670541684.github.io/master/assets/image/ars_1.png )
+![](https://raw.githubusercontent.com/kemingzeng/kemingzeng.github.io/master/assets/image/ars_1.png )
 
 ### 所以什么是R-square
 \\[R^{2} = 1-\frac{RSS}{TSS}\\]
