@@ -5,7 +5,6 @@ date: 2021-07-05
 categories: blog
 tags: [memory]
 description: public和private竟然还有这区别。
-
 ---
 
 #### public、private在继承时有奇怪的坑
