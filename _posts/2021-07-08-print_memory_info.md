@@ -20,6 +20,11 @@ description: 查看内存占用。
 - 从/proc/self去查找
 
 ```c++
+#include <iomanip>
+#include <fstream>
+
+using namespace std;
+
 void formatValue(const char msg[], double value, int index) {
     string memory_unit[5] = {" [B]", " [KB]", " [MB]", " [GB]", " [TB]"};
     while (value > 900) {

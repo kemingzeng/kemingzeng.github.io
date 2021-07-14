@@ -72,3 +72,8 @@ git checkout -b 开发分支名
   - 最新状态是我们的强制推送
   - 需要重新输入`/retest`触发ci
   - 继续等待review
+
+### 8. 意外情况
+
+- 如果上传了大文件就比较麻烦，因为git会保存历史记录，没法彻底清除。
+  - 可以参考[教程](https://www.cnblogs.com/tielemao/p/9973477.html)
